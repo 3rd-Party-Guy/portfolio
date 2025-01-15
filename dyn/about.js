@@ -2,7 +2,7 @@ import { FetchJSON, TypewriteRec } from "./lib.js";
 
 let writingProcess;
 
-FetchJSON('../about-paragraphs.json')
+FetchJSON('./about-paragraphs.json')
   .then((data) => {
     console.log(`DATA: ${data}`);
     const buttons = {
