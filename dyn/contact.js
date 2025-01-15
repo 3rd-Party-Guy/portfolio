@@ -1,4 +1,4 @@
-import { TypewriteRec } from './lib.js';
+import { TypewriteRec } from 'lib.js';
 
 TypewriteRec('#contact-phone', 'Phone: +49 1516 3213 748', 0, 15, false, () => {
   TypewriteRec('#contact-email', 'E-Mail: nikolayhadzhiev@outlook.com', 0, 15, false, () => {
