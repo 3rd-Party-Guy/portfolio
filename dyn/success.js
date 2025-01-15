@@ -58,7 +58,7 @@ nextButton.addEventListener('click', () => {
   UpdateState();
 });
 
-FetchJSON('../stories.json')
+FetchJSON('stories.json')
   .then((data) => {
     const elemStoryLookup = {
       'select-story-1': data.GlobalFarmer,
