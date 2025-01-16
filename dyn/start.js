@@ -35,5 +35,6 @@ function ChangeLabel() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+  shouldAppend = false;
   ChangeLabel();
 });
