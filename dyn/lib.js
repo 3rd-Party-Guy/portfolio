@@ -1,4 +1,4 @@
-const audio = new (window.AudioContext || window.webkitAudioContext)();
+const caret = '<span aria-hidden="true"></span>';
 
 export async function FetchJSON(name) {
   return fetch(name)
@@ -11,7 +11,38 @@ export async function FetchJSON(name) {
     })
 }
 
-export function TypewriteRec(query, text, i, delay, shouldAddCaret, callback, callbackDelay = 1500, shouldPlayTick = false) {
+export function UntypeRec(query, length, delay, shouldAddCaret, callback, callbackDelay = 500) {
+  const element = document.querySelector(query);
+
+  function deleteChars(currentLength) {
+    if (currentLength <= 0) {
+      setTimeout(() => {
+        callback && callback();
+      }, callbackDelay);
+      return;
+    }
+
+    let amountToDelete = -1;
+    if (element.innerHTML.endsWith(caret)) {
+      amountToDelete -= caret.length;
+    }
+
+    element.innerHTML = element.innerHTML.slice(0, amountToDelete);
+
+    if (shouldAddCaret) {
+      element.innerHTML += caret;
+    }
+
+    setTimeout(() => {
+      deleteChars(currentLength - 1);
+    }, delay);
+  }
+
+  deleteChars(length);
+}
+
+export function TypewriteRec(query, text, i, delay, shouldAddCaret, callback, callbackDelay = 1500) {
+  console.log(text);
   let timer;
   const process = {
     Stop: () => clearTimeout(timer)
@@ -19,12 +50,9 @@ export function TypewriteRec(query, text, i, delay, shouldAddCaret, callback, ca
 
   function type(query, text, i, delay, shouldAddCaret) {
     if (i < text.length) {
-      let append = text.substring(0, i + 1);
+      let append = text.substring(0, i+1);
       if (shouldAddCaret) {
-        append += '<span aria-hidden="true"></span>';
-      }
-      if (shouldPlayTick) {
-        PlayTick();
+        append += caret;
       }
 
       document.querySelector(query).innerHTML = append;

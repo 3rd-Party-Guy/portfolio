@@ -1,16 +1,39 @@
-import { TypewriteRec } from "./lib.js";
+import { TypewriteRec, UntypeRec } from "./lib.js";
 
 const typeLabelCharDelay = 75;
-document.addEventListener('DOMContentLoaded', (event) => {
-  var labels = ["Creating Games", "Creating Experiences"];
+const deleteLabelCharDelay = 45;
+const appends = ["Games", "Experiences"];
 
-  function ChangeLabel(i) {
-    if (i >= labels.length) {
-      i = 0;
-    }
+let appendIndex = 0;
+let shouldAppend = true;
 
-    TypewriteRec('typewrite-label', labels[i], 0, typeLabelCharDelay, true, () => ChangeLabel(i+1));
+let currentAppend = appends[appendIndex];
+let currentLabel = `Creating ${currentAppend}`;
+
+function UpdateState() {
+  appendIndex = (appendIndex + 1) % appends.length;
+
+  currentAppend = appends[appendIndex];
+  currentLabel = `Creating ${currentAppend}`;
+}
+
+function ChangeLabel() {
+  shouldAppend = !shouldAppend;
+
+  if (shouldAppend) {
+    TypewriteRec('typewrite-label', currentLabel, 'Creating '.length - 1, typeLabelCharDelay, true, () => {
+        ChangeLabel();
+      }
+    );
+  } else {
+    UntypeRec('typewrite-label', currentAppend.length, deleteLabelCharDelay, true, () => {
+        UpdateState();
+        ChangeLabel();
+      }
+    );
   }
+}
 
-  ChangeLabel(0);
+document.addEventListener('DOMContentLoaded', () => {
+  ChangeLabel();
 });
