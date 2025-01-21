@@ -3,27 +3,27 @@
     "Parts": [
       {
         "Picture": "media/stories/GlobalFarmer/global-farmer-logo.webp",
-        "Paragraph": "I worked on Global Farmer from April until December 2024 for Thera Bytes. It was the first commercial game I released and actively worked on both prior to and after its release.\nI learned a lot about the internal processes of a studio and how to contribute to a professional codebase."
+        "Paragraph": "From April to December 2024, I worked at Thera Bytes on Global Farmer, my first commercial game release. I contributed to the project both before and after its Early Access launch, gaining valuable experience in studio workflows and maintaining a professional codebase."
       },
       {
         "Picture": "media/stories/GlobalFarmer/gf-animals-farm.webp",
-        "Paragraph": "I created and designed the animal system part of the codebase. Animals were very intricate, as they consume, produce, have costs, and migrate independently.\nIt was very interesting to have to think about creating an exentsible system that is both easy to access from the rest of the project (for UI and other stuff) as well as secure from any unintentional behaviour. As it is a crucial part of the game, I had to approach its functionality from the perspective of the user, that being both the player in-game and my colleagues who had to get/send information to the animals."
+        "Paragraph": "I designed and implemented the animal system for Global Farmer, managing complex mechanics like consumption, production, costs, and independent migration. Building this extensible system required balancing accessibility for UI and other project components with security against unintended behavior. As a core feature of the game, I approached its functionality from both the player's perspective and the needs of my colleagues, ensuring seamless interaction and reliable data flow."
       },
       {
         "Picture": "media/stories/GlobalFarmer/gf-animals-pasture.webp",
-        "Paragraph": "Animals migrate between pastures and fields independently on a daily basis based on a set of conditions, such as the weather.\nI was very interested in creating the algorithm for this behaviour, as well as many others, such as that for automatic and effective employee and machine usage in planting, since it was a nice challenge in terms of optimisation, readability and - by extention - the algorithm's scalability for future purposes."
+        "Paragraph": "I developed the migration algorithm for animals in Global Farmer, enabling them to move between pastures and fields daily based on conditions like weather. I also designed systems for automating employee and machine usage during planting. These challenges required a focus on optimization, readability, and scalability, ensuring the algorithms could adapt to future needs."
       },
       {
         "Picture": "media/stories/GlobalFarmer/gf-planting.webp",
-        "Paragraph": "Together with the lead game-designer I re-designed and re-implemented the planting code and UI. Since this was the core gameplay-loop, it was very important we nail this perfectly."
+        "Paragraph": "Collaborating with the lead game designer, I re-designed and re-implemented the planting system and UI. Given its central role in the core gameplay loop, we focused on perfecting every detail to ensure a seamless and engaging player experience."
       },
       {
         "Picture": "media/stories/GlobalFarmer/gf-timeline.webp",
-        "Paragraph": "Other parts of the UI, such as the timeline, its weather graphs, and planting information, had to always be valid to the game's state - a challenge which sounds deceptively simple since each part of the UI could hypothetically change the game state at any given time in such a UI-heavy game. It was a pleasure to have this part of the code as my main responsibility."
+        "Paragraph": "I was responsible for ensuring the UI components—like the timeline, weather graphs, and planting information—always reflected the game's current state. This was a complex task, as each UI element could potentially alter the game state in this UI-heavy game. It was a rewarding challenge to manage this aspect of the project."
       },
       {
         "Picture": "media/stories/GlobalFarmer/gf-action.webp",
-        "Paragraph": "Overall, Global Farmer was my first deep-dive into professional game-development outside of my previous freelancing jobs. It was nice to see how I can contribute to a team of veterans and work together with all other parts of the studio.\nGlobal Farmer showed me that the 13-year-old me was right to choose this career path."
+        "Paragraph": "Global Farme* was my first in-depth experience with professional game development beyond freelancing. It was fulfilling to collaborate with a team of veterans and contribute to the studio's success. The project reaffirmed that the 13-year-old me made the right choice in pursuing this career."
       }
     ]
   },
@@ -31,23 +31,23 @@
     "Parts": [
       {
         "Picture": "media/stories/Element-FighterZ/efz-logo.webp",
-        "Paragraph": "Element-FighterZ was my first project in university. Since I was the lead-programmer, I decided to go all-out and try to create a data-oritented engine, coupled with an ECS, that would be optimised for the browser using nothing but pure JavaScript within the 4 weeks of time I had. I would say me and the team, consisting of one more programmer and two artists, succeeded graciously."
+        "Paragraph": "Element-FighterZ was my first university project, where I led the programming effort. I decided to build a data-oriented engine with an ECS, optimized for the browser using pure JavaScript, all within a 4-week timeframe. With a small team of one other programmer and two artists, we successfully brought the project to life."
       },
       {
         "Picture": "media/stories/Element-FighterZ/efz-normal.webp",
-        "Paragraph": "Not only did we have a good engine I was proud of, as it was also the first serious engine I wrote, but also a playable 1v1 fighting game with 4 characters, each having distinct ranged and melee abilities, as well as 4 different maps to choose from. We got a perfect score for the project, and my professors were very impressed with the final codebase. Implementing the final game took about a week and half in the end and was a blast, thanks to my data-oriented approach. This project showed me that data-driven design is almost always the way to go for scalability and efficiency."
+        "Paragraph": "Not only was I proud of the engine I built—my first serious one—but we also developed a fully playable 1v1 fighting game with 4 unique characters, each with distinct abilities, and 4 different maps. We earned a perfect score for the project, and my professors were impressed with the final codebase. The game implementation took about a week and a half and was a blast, thanks to my data-oriented approach. This project confirmed that data-driven design is key for scalability and efficiency."
       },
       {
         "Picture": "media/stories/Element-FighterZ/efz-col-none.webp",
-        "Paragraph": "While the platforming part uses a standard discrete collision algorithm, I decided to implement a novel, shader-based combat collision system. I have never seen this implement in other games, and the idea seemed exciting to me. Using a very simple white shader and XOR operations on a very stripped down version of the scene created a fast and efficient combat collision in which what you see is truly what you get."
+        "Paragraph": "For the platforming, I used a standard discrete collision algorithm, but for combat, I implemented a unique shader-based collision system. This approach, which I hadn't seen in other games, involved a simple white shader and XOR operations on a simplified scene, creating a fast and efficient combat collision system where what you see is truly what you get."
       },
       {
         "Picture": "media/stories/Element-FighterZ/efz-col-combat.webp",
-        "Paragraph": "I was very surprised by the ease of implementation and speed of this approach. If I do work on any combat games in the future, I would love to expand and optimise this technique further."
+        "Paragraph": "I was pleasantly surprised by the simplicity and speed of this approach. If I work on any combat games in the future, I’m eager to expand and optimize this technique further."
       },
       {
         "Picture": "media/stories/Element-FighterZ/efz-engine-structure.webp",
-        "Paragraph": "Looking back there are a lot of things I would have implemented differently when it comes to the game-engine, especially within the ECS. Working on games with a higher scope taught me that simplicity is almost always key, as it allows everybody to quickly get started within each part of the codebase and prevents bloating."
+        "Paragraph": "Looking back, there are several things I would have implemented differently in the game engine, particularly within the ECS. Working on larger-scale games has taught me that simplicity is key—it helps everyone quickly get started and prevents unnecessary bloat in the codebase."
       }
     ]
   },
@@ -55,11 +55,11 @@
     "Parts": [
       {
         "Picture": "media/stories/OSMLoader/osm-interface.webp",
-        "Paragraph": "Great games stem from giving great designers good tools. Creating tools for specific games is a big passion of mine. One of my favorite ones that I have created has to be OSMLoader, a tool which parses and loads OpenStreetMaps data to create cityscapes."
+        "Paragraph": "Great games come from empowering designers with the right tools. Creating tools tailored to specific games is a passion of mine. One of my favorites is OSMLoader, a tool I developed to parse and load OpenStreetMap data, enabling the creation of cityscapes."
       },
       {
         "Picture": "media/stories/OSMLoader/osm-result.webp",
-        "Paragraph": "I loved getting acquainted with the OSM XML data format in its details. The final result also seemed very promising for future games. It also helped me to learn how data is structured and processed optimally on industrial-scale."
+        "Paragraph": "I enjoyed delving into the OSM XML data format and understanding its intricacies. The final result was promising for future games and gave me valuable insights into how data is structured and processed efficiently at an industrial scale."
       }
     ]
   },
@@ -67,11 +67,11 @@
     "Parts": [
       {
         "Picture": "media/stories/TraderAI/tai-one.webp",
-        "Paragraph": "Outside of game-development, I realised that quantum trading is the perfect place to let my love for research, algorithms, and data to flourish. My most successful trading AI utilises LLM technology and real-time headline data to access market sentiment as well as future opportunities, and trades accordingly."
+        "Paragraph": "Outside of game development, I found that quantum trading perfectly aligns with my passion for research, algorithms, and data. My most successful trading AI leverages LLM technology and real-time headline data to assess market sentiment and identify future opportunities, trading accordingly."
       },
       {
         "Picture": "media/stories/TraderAI/tai-sentiment-graph.webp",
-        "Paragraph": "Overall this approach has lead to a diversified and constantly-changing portfolio which seems to work greatly in many different market-environments. It has taught me that listening is the most powerful thing humans can do."
+        "Paragraph": "This approach has resulted in a diversified, dynamic portfolio that performs well across various market environments. It’s taught me that listening—whether to data, patterns, or signals—is one of the most powerful skills we can develop."
       }
     ]
   }
