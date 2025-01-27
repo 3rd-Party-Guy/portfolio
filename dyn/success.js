@@ -65,6 +65,7 @@ FetchJSON('./stories.json')
       'select-story-2': data.ElementFighterZ,
       'select-story-3': data.OSMLoader,
       'select-story-4': data.TraderAI,
+      'select-story-5': data.AudioVisuals,
     };
 
     Object.entries(elemStoryLookup).forEach(([id, story]) => {

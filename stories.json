@@ -74,5 +74,17 @@
         "Paragraph": "This approach has resulted in a diversified, dynamic portfolio that performs well across various market environments. It’s taught me that listening—whether to data, patterns, or signals—is one of the most powerful skills we can develop."
       }
     ]
+  },
+  "AudioVisuals": {
+    "Parts": [
+      {
+        "Picture": "media/stories/AudioVisuals/hlsl1.webp",
+        "Paragraph": "Before joining the development of Global Farmer, I worked as a freelance artist creating audio-reactive visuals using TouchDesigner and HLSL. This experience deepened my knowledge of graphics programming, shader mathematics, and rendering optimisation. Optimisation was a critical aspect of my work, as all visuals had to be rendered in real-time to ensure seamless performance during live events."
+      },
+      {
+        "Picture": "media/stories/AudioVisuals/hlsl2.webp",
+        "Paragraph": "This experience has enabled me to experiment with shaders and rendering in my own games, tailoring the rendering pipeline to perfectly align with my workflow and my game's specific needs — without compromises or unnecessary bloat."
+      }
+    ]
   }
 }
