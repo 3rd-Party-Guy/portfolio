@@ -2,7 +2,7 @@ import { TypewriteRec, UntypeRec } from "./lib.js";
 
 const typeLabelCharDelay = 75;
 const deleteLabelCharDelay = 45;
-const appends = ["Games", "Experiences"];
+const appends = ["Games", "Tools", "Experiences",];
 
 let appendIndex = 0;
 let shouldAppend = true;
